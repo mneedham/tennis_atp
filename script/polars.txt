@@ -1,0 +1,31 @@
+kd:cmd
+t:~
+ku:cmd
+
+kd:ctrl
+t:l
+ku:ctrl
+
+t:pygmentize scripts/polars_to_parquet.py
+kp:enter
+
+w:1000
+
+kd:ctrl
+t:l
+ku:ctrl
+
+t:docker run -it -d -v $PWD/scripts:/scripts -v $PWD/output:/output -m 100m --name python-tennis --rm python-tennis:0.0.1 python /scripts/polars_to_parquet.py &>/dev/null && check_memory_usage
+kp:enter
+
+w:25000
+
+t:du -h output/polars_atp_rankings.parquet
+kp:enter
+
+w:1000
+
+
+kd:ctrl
+t:l
+ku:ctrl

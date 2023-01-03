@@ -24,7 +24,7 @@ FROM parquet_metadata('output/duck_atp_rankings.parquet')
 WHERE row_group_id = 0;
 
 SELECT row_group_id, column_id, num_values, compression, encodings
-FROM parquet_metadata('output/pl_atp_rankings.parquet')
+FROM parquet_metadata('output/polars_atp_rankings.parquet')
 WHERE row_group_id = 0;
 
  ```

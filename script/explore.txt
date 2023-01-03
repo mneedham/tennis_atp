@@ -1,0 +1,27 @@
+kd:cmd
+t:~
+ku:cmd
+
+kd:ctrl
+t:l
+ku:ctrl
+
+t:./duckdb
+kp:enter
+
+w:1000
+
+t:select count(*) FROM 'output/pandas_atp_rankings.parquet';
+kp:enter
+
+w:1000
+
+t:select count(*) FROM 'output/polars_atp_rankings.parquet';
+kp:enter
+
+w:1000
+
+t:select count(*) FROM 'output/duck_atp_rankings.parquet';
+kp:enter
+
+w:1000

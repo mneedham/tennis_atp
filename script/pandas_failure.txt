@@ -1,0 +1,10 @@
+kd:cmd
+t:~
+ku:cmd
+
+t:echo $?
+kp:enter
+
+kd:ctrl
+t:l
+ku:ctrl
